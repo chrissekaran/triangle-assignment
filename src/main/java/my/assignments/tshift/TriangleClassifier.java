@@ -12,7 +12,7 @@ public class TriangleClassifier implements PolygonClassifier<TriangleType> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TriangleClassifier.class);
 
-    TriangleFactory triangleFactory = TriangleFactory.instance();
+    PolygonSidesValidator triangleFactory = TriangleFactory.instance();
 
     public TriangleType classify(String[] arguments) {
         try {
